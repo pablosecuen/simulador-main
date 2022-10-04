@@ -14,6 +14,18 @@ function numeroSimetrico(num) {
 
   // Tu código:
 
+  const str = num.toString()
+  let rev = str.length -1;
+  for( let i = 0 ; i < rev/2 ;i++)
+  {
+    let x = str[i] ;
+    let y = str[rev-i];
+    if( x != y)
+    {
+      return false;
+    }
+  }
+  return true;
 }
 
 // No modifiques nada debajo de esta linea //

@@ -12,6 +12,16 @@ function stringMasLarga(strings) {
   // stringMasLarga(['JavaScript', 'HTML', 'CSS']); debe retornar 'JavaScript'
 
   // Tu código aca
+  var max_str = strings[0].length;
+  var respuesta = strings[0];
+  for (var i = 0; i < strings.length; i++) {
+    var maxi = strings[i].length;
+    if (maxi > max_str) {
+      respuesta = strings[i];
+      max_str = maxi;
+    }
+  }
+  return respuesta;
 }
 
 // No modifiques nada debajo de esta linea //

@@ -15,7 +15,15 @@ function pluck(array, propiedad) {
 
   // Tu código acá:
 
-}
+  const map = new map();
+  map.set('name', 'TV LCD');
+  map.set('price', '100');
+  
+  const valores = Array.from(map.valores());
+  
+  return Array
+  
+  }
 
 // No modifiques nada debajo de esta linea //
 
