@@ -23,7 +23,7 @@ function pluck(array, propiedad) {
   
   return Array
   
-  }
+  } 
 
 // No modifiques nada debajo de esta linea //
 

@@ -15,7 +15,7 @@ function soloNumeros(array) {
   array.forEach(i => {if (typeof(i) === 'number') {output.push(i)} })
   return output
 }
-
+ 
 // No modifiques nada debajo de esta linea //
 
 

@@ -26,7 +26,7 @@ function numeroSimetrico(num) {
     }
   }
   return true;
-}
+} 
 
 // No modifiques nada debajo de esta linea //
 
