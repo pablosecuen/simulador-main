@@ -24,9 +24,33 @@ function filtrar(funcion) {
   // productos.filtrar(function(p) {
   //   return p.price >= 50;
   // }) => [{price: 100, name:'tv'}]
+  Array.prototype.filtrar = function (cb) {
+    const array = this;
+    const nuevoArreglo = [];
+    for (let i = 0; i < this.length; i++) {
+      const elem = array[i];
+      const filtro = cb(elem, i);
+      if (filtro) {
+        nuevoArreglo.push(elem);
+      }
+    }
+    return nuevoArreglo;
+  };
+}
+//let filtrado = productos.filtrar(function(p) {
+//  return p.price >= 50;
+//});
 
-};
+//  for (let i = 0; i < cb.length; i++) {
+//      const element = array[i];
+//     const filter = cb(element, i);
+//     if (filter) {
+//       response.push(element);
+//     }
+//   }
+//    return response;
+//  };
 
 // No modifiques nada debajo de esta linea //
 
-module.exports = filtrar
+module.exports = filtrar;
